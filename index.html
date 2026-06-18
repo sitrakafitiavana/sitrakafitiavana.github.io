@@ -132,7 +132,7 @@ title: "Accueil"
         <div class="timeline-card">
           <div class="timeline-header">
             <h3>Opérationnelle</h3>
-            <span class="timeline-company">Startimes — Andranobevava</span>
+            <span class="timeline-company"><a href="https://web.facebook.com/startimesmadagascar/?locale=fr_FR&_rdc=1&_rdr" target="_blank" rel="noopener">Startimes</a> — Andranobevava</span>
           </div>
           <ul>
             <li>Prospection de nouveaux clients</li>
@@ -150,7 +150,7 @@ title: "Accueil"
         <div class="timeline-card">
           <div class="timeline-header">
             <h3>Stagiaire Ressources Humaines</h3>
-            <span class="timeline-company">Airtel Madagascar — Morarano Alarobia</span>
+            <span class="timeline-company"><a href="https://www.airtel.mg/" target="_blank" rel="noopener">Airtel Madagascar</a> — Morarano Alarobia</span>
           </div>
           <ul>
             <li>Planning cantine et responsable de stock (fournitures)</li>
@@ -223,6 +223,22 @@ title: "Accueil"
   </div>
 </section>
 
+<!-- CALENDLY -->
+<section class="section section-alt" id="rendez-vous">
+  <div class="container">
+    <h2 class="section-title">Prendre rendez-vous</h2>
+    <p class="section-sub">Réservez directement un créneau dans mon agenda.</p>
+    <div class="calendly-wrapper">
+      <!-- Remplace YOUR_CALENDLY_URL par ton vrai lien, ex: sitraka-nomena -->
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/sitrakanomena1309/30min"
+           style="min-width:320px;height:700px;">
+      </div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="section" id="contact">
   <div class="container">
@@ -240,6 +256,12 @@ title: "Accueil"
             <a href="tel:+261343242229">+261 34 32 422 29</a>
           </div>
           <div class="contact-item">
+            <span class="contact-icon">💬</span>
+            <a href="https://wa.me/261343242229" target="_blank" rel="noopener" class="whatsapp-link">
+              WhatsApp
+            </a>
+          </div>
+          <div class="contact-item">
             <span class="contact-icon">📍</span>
             <span>26 Ter Manjaka Ilafy, Madagascar</span>
           </div>
@@ -251,7 +273,14 @@ title: "Accueil"
           {% endif %}
         </div>
       </div>
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="df91d467-a616-4778-b91a-c0b9c40a9de9" />
+        <input type="hidden" name="subject" value="Nouveau message depuis le portfolio de Sitraka" />
+        <input type="hidden" name="from_name" value="Portfolio Sitraka Nomena" />
+        <input type="hidden" name="redirect" value="false" />
+        <!-- Honeypot anti-spam -->
+        <input type="checkbox" name="botcheck" style="display:none;" />
+
         <div class="form-group">
           <label for="name">Nom</label>
           <input type="text" id="name" name="name" required placeholder="Votre nom" />
@@ -261,10 +290,18 @@ title: "Accueil"
           <input type="email" id="email" name="email" required placeholder="votre@email.com" />
         </div>
         <div class="form-group">
+          <label for="phone">Téléphone (optionnel)</label>
+          <input type="tel" id="phone" name="phone" placeholder="+261 XX XX XXX XX" />
+        </div>
+        <div class="form-group">
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required placeholder="Votre message…"></textarea>
         </div>
-        <button type="submit" class="btn">Envoyer</button>
+        <button type="submit" class="btn" id="submit-btn">
+          <span id="btn-text">Envoyer</span>
+          <span id="btn-spinner" style="display:none;">⏳ Envoi…</span>
+        </button>
+        <div id="form-result" class="form-result" style="display:none;"></div>
       </form>
     </div>
   </div>
