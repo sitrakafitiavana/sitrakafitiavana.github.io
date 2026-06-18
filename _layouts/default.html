@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="nav-logo" href="{{ '/' | relative_url }}">Sitraka<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="{{ '/' | relative_url }}#about">À propos</a></li>
+        <li><a href="{{ '/' | relative_url }}#skills">Compétences</a></li>
+        <li><a href="{{ '/' | relative_url }}#projects">Projets</a></li>
+        <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/' | relative_url }}#contact" class="btn-nav">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>{{ content }}</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ 'now' | date: "%Y" }} Ny Anjara Fitiavana Sitraka Nomena</p>
+      <div class="footer-links">
+        {% if site.author.github %}
+        <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+        {% endif %}
+        {% if site.author.linkedin %}
+        <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        {% endif %}
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

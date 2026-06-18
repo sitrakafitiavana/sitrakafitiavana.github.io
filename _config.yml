@@ -1,0 +1,34 @@
+title: "Sitraka Nomena"
+description: "Portfolio de Ny Anjara Fitiavana Sitraka Nomena"
+url: "https://sitraka-nomena.github.io"
+baseurl: ""
+
+author:
+  name: "Ny Anjara Fitiavana Sitraka Nomena"
+  email: "sitrakanomena1309@gmail.com"
+  github: ""
+  linkedin: ""
+  facebook: "Sitraka Nomena"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .jekyll-cache
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/

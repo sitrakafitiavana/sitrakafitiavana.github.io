@@ -1,0 +1,35 @@
+---
+layout: default
+title: "Blog"
+permalink: /blog/
+---
+<section class="page-hero">
+  <div class="container">
+    <h1>Blog</h1>
+    <p>Mes réflexions sur le développement, les technologies et plus encore.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% if site.posts.size > 0 %}
+    <div class="posts-list">
+      {% for post in site.posts %}
+      <article class="post-list-item">
+        <div class="post-list-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time>
+          {% if post.categories %}
+            {% for cat in post.categories %}<span class="tag">{{ cat }}</span>{% endfor %}
+          {% endif %}
+        </div>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Lire la suite &rarr;</a>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="empty-state">Aucun article pour l'instant. Revenez bientôt !</p>
+    {% endif %}
+  </div>
+</section>
