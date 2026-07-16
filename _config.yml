@@ -1,6 +1,6 @@
 title: "Sitraka Nomena"
 description: "Portfolio de Ny Anjara Fitiavana Sitraka Nomena"
-url: "https://sitraka-nomena.github.io"
+url: "https://sitrakafitiavana.github.io"
 baseurl: ""
 
 author:
@@ -9,6 +9,7 @@ author:
   github: ""
   linkedin: ""
   facebook: "Sitraka Nomena"
+  linkedin: "https://www.linkedin.com/in/sitraka-nomena"
 
 # Build settings
 markdown: kramdown

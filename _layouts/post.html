@@ -1,13 +1,18 @@
 ---
 layout: default
 ---
+<!-- Barre de progression lecture -->
+<div id="read-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+
 <article class="post container">
+  {% include breadcrumb.html %}
+
   <header class="post-header">
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
       {% if page.categories %}
       <span class="post-categories">
-        {% for cat in page.categories %}<span>{{ cat }}</span>{% endfor %}
+        {% for cat in page.categories %}<span class="tag">{{ cat }}</span>{% endfor %}
       </span>
       {% endif %}
     </div>
@@ -15,11 +20,12 @@ layout: default
     {% if page.excerpt %}<p class="post-excerpt">{{ page.excerpt }}</p>{% endif %}
   </header>
 
-  <div class="post-content">
+  <div class="post-content" id="post-body">
     {{ content }}
   </div>
 
   <footer class="post-footer">
+    {% include social-share.html %}
     <a href="{{ '/blog' | relative_url }}" class="btn-outline">&larr; Retour au blog</a>
   </footer>
 </article>

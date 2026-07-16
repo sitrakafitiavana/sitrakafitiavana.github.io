@@ -1,0 +1,52 @@
+---
+layout: none
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Page d'accueil -->
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>{{ site.url }}/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+
+  <!-- Projets -->
+  <url>
+    <loc>{{ site.url }}/projects/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+
+  <!-- Articles de blog -->
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  {% endfor %}
+
+  <!-- Projets -->
+  {% for project in site.projects %}
+  <url>
+    <loc>{{ site.url }}{{ project.url }}</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  {% endfor %}
+
+</urlset>

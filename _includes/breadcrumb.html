@@ -1,0 +1,32 @@
+<nav class="breadcrumb" aria-label="Fil d'Ariane">
+  <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="{{ '/' | relative_url }}" itemprop="item"><span itemprop="name">Accueil</span></a>
+      <meta itemprop="position" content="1" />
+    </li>
+    {% if page.layout == 'post' %}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="{{ '/blog' | relative_url }}" itemprop="item"><span itemprop="name">Blog</span></a>
+      <meta itemprop="position" content="2" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name">{{ page.title }}</span>
+      <meta itemprop="position" content="3" />
+    </li>
+    {% elsif page.layout == 'project' %}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="{{ '/projects' | relative_url }}" itemprop="item"><span itemprop="name">Projets</span></a>
+      <meta itemprop="position" content="2" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name">{{ page.title }}</span>
+      <meta itemprop="position" content="3" />
+    </li>
+    {% else %}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name">{{ page.title }}</span>
+      <meta itemprop="position" content="2" />
+    </li>
+    {% endif %}
+  </ol>
+</nav>

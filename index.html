@@ -9,20 +9,45 @@ title: "Accueil"
     <div class="hero-text">
       <p class="hero-greeting">Bonjour, je suis</p>
       <h1 class="hero-name">Ny Anjara Fitiavana<br><span>Sitraka Nomena</span></h1>
-      <p class="hero-role">Commerciale & Chargée RH</p>
+      <p class="hero-role">Spécialiste Relation Client & Community Management</p>
+      <p class="hero-sub-role">Commerciale de formation</p>
       <p class="hero-bio">
-        Organisée, optimiste, déterminée et toujours souriante —
-        je mets mon énergie au service de la relation client et du développement commercial.
+        Organisée, réactive et toujours souriante — je mets mon énergie au service
+        de la satisfaction client, de l'animation de communautés digitales
+        et du développement commercial.
       </p>
       <div class="hero-cta">
-        <a href="#projects" class="btn">Voir mes projets</a>
+        <a href="#projects" class="btn">Voir mes réalisations</a>
         <a href="#contact" class="btn btn-outline">Me contacter</a>
       </div>
     </div>
     <div class="hero-visual">
       <div class="avatar-wrapper">
-        <img src="{{ '/assets/images/sitraka-portrait.jpg' | relative_url }}" alt="Sitraka Nomena" class="hero-photo" />
+        <picture>
+          <source srcset="{{ '/assets/images/sitraka-portrait.webp' | relative_url }}" type="image/webp" />
+          <img src="{{ '/assets/images/sitraka-portrait.jpg' | relative_url }}"
+               alt="Portrait de Ny Anjara Fitiavana Sitraka Nomena — Commerciale et Chargée RH à Madagascar"
+               class="hero-photo" width="260" height="320" fetchpriority="high" />
+        </picture>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="section section-alt" id="video">
+  <div class="container">
+    <h2 class="section-title">Vidéo de présentation</h2>
+    <p class="section-sub">Faisons connaissance en quelques minutes.</p>
+    <div class="video-wrapper video-portrait">
+      <iframe
+        src="https://www.youtube.com/embed/_VduK8288go"
+        title="Sitraka Nomena — Spécialiste Relation Client &amp; Community Management | Madagascar"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 </section>
@@ -47,23 +72,33 @@ title: "Accueil"
       </div>
       <div class="about-gallery">
         <div class="gallery-img">
-          <img src="{{ '/assets/images/sitraka-photo2.jpg' | relative_url }}" alt="Sitraka Nomena" loading="lazy" />
+          <picture>
+            <source srcset="{{ '/assets/images/sitraka-photo2.webp' | relative_url }}" type="image/webp" />
+            <img src="{{ '/assets/images/sitraka-photo2.jpg' | relative_url }}"
+                 alt="Sitraka Nomena en tenue professionnelle — Madagascar"
+                 loading="lazy" width="160" height="200" />
+          </picture>
         </div>
         <div class="gallery-img">
-          <img src="{{ '/assets/images/sitraka-photo3.jpg' | relative_url }}" alt="Sitraka Nomena" loading="lazy" />
+          <picture>
+            <source srcset="{{ '/assets/images/sitraka-photo3.webp' | relative_url }}" type="image/webp" />
+            <img src="{{ '/assets/images/sitraka-photo3.jpg' | relative_url }}"
+                 alt="Sitraka Nomena lors d'un événement professionnel à Madagascar"
+                 loading="lazy" width="160" height="200" />
+          </picture>
         </div>
       </div>
       <div class="about-stats">
         <div class="stat">
-          <span class="stat-number">6+</span>
+          <span class="stat-number" data-target="6" data-suffix="+">6+</span>
           <span class="stat-label">Ans d'expérience</span>
         </div>
         <div class="stat">
-          <span class="stat-number">4</span>
+          <span class="stat-number" data-target="4">4</span>
           <span class="stat-label">Entreprises</span>
         </div>
         <div class="stat">
-          <span class="stat-number">3</span>
+          <span class="stat-number" data-target="3">3</span>
           <span class="stat-label">Langues</span>
         </div>
       </div>
@@ -107,8 +142,30 @@ title: "Accueil"
         </ul>
       </div>
       <div class="skill-card">
+        <div class="skill-icon">🎧</div>
+        <h3>Relation Client / Support</h3>
+        <ul>
+          <li>Gestion des demandes clients</li>
+          <li>Réactivité & résolution de problèmes</li>
+          <li>Satisfaction & fidélisation</li>
+          <li>WhatsApp Business</li>
+          <li><em class="skill-soon">Zendesk · Freshdesk · Intercom</em></li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📱</div>
+        <h3>Community Management</h3>
+        <ul>
+          <li>Animation de communauté</li>
+          <li>Rédaction de posts & visuels</li>
+          <li>Modération de commentaires</li>
+          <li>Veille & reporting</li>
+          <li><em class="skill-soon">Canva · Meta Business Suite</em></li>
+        </ul>
+      </div>
+      <div class="skill-card">
         <div class="skill-icon">🖥️</div>
-        <h3>Informatique</h3>
+        <h3>Informatique & Outils</h3>
         <ul>
           <li>Microsoft Word & Excel</li>
           <li>PowerPoint</li>
@@ -126,42 +183,42 @@ title: "Accueil"
     <h2 class="section-title">Expériences professionnelles</h2>
     <div class="timeline">
 
-      <div class="timeline-item">
+      <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-date">Depuis mars 2025</div>
         <div class="timeline-card">
           <div class="timeline-header">
-            <h3>Opérationnelle</h3>
+            <h3>Commerciale & Chargée de Relation Client</h3>
             <span class="timeline-company"><a href="https://web.facebook.com/startimesmadagascar/?locale=fr_FR&_rdc=1&_rdr" target="_blank" rel="noopener">Startimes</a> — Andranobevava</span>
           </div>
           <ul>
-            <li>Prospection de nouveaux clients</li>
-            <li>Présentation et vente de panneaux solaires (abonnements, kits, équipements)</li>
-            <li>Réalisation des activations au bureau</li>
-            <li>Développement et suivi du portefeuille clients</li>
-            <li>Fidélisation et gestion de la relation client</li>
+            <li>Prospection terrain et acquisition de nouveaux clients</li>
+            <li>Présentation et vente de solutions solaires (abonnements, kits, équipements)</li>
+            <li>Suivi post-vente et gestion des réclamations clients via WhatsApp Business</li>
+            <li>Fidélisation du portefeuille : relances, renouvellements, satisfaction client</li>
+            <li>Remontée des retours clients pour améliorer le service</li>
           </ul>
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-date">Août 2024 — Février 2025</div>
         <div class="timeline-card">
           <div class="timeline-header">
-            <h3>Stagiaire Ressources Humaines</h3>
+            <h3>Stagiaire Ressources Humaines & Administration</h3>
             <span class="timeline-company"><a href="https://www.airtel.mg/" target="_blank" rel="noopener">Airtel Madagascar</a> — Morarano Alarobia</span>
           </div>
           <ul>
-            <li>Planning cantine et responsable de stock (fournitures)</li>
-            <li>Gestion des dossiers ASCOMA et certificats de scolarité</li>
-            <li>Suivi des carburants (logistique)</li>
-            <li>Organisation des activités de production</li>
+            <li>Gestion et suivi des dossiers collaborateurs (ASCOMA, certificats)</li>
+            <li>Interface entre les équipes internes et les prestataires — sens du service</li>
+            <li>Organisation et coordination des activités opérationnelles</li>
+            <li>Gestion des stocks et des ressources logistiques</li>
           </ul>
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-date">Mars 2021 — Juillet 2023</div>
         <div class="timeline-card">
@@ -177,21 +234,82 @@ title: "Accueil"
         </div>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-date">Août 2018 — Août 2021</div>
         <div class="timeline-card">
           <div class="timeline-header">
-            <h3>Opérateur Online</h3>
+            <h3>Opérateur Online — Premiers pas dans le digital</h3>
             <span class="timeline-company">SmartOne — Ankorondrano</span>
           </div>
           <ul>
-            <li>Délégation et gestion de tâches externalisées</li>
-            <li>Traitement des opérations en ligne</li>
+            <li>Traitement quotidien de demandes clients en ligne</li>
+            <li>Gestion multi-tâches à distance dans un environnement 100% digital</li>
+            <li>Réponses rapides et suivi des dossiers en temps réel</li>
+            <li>Développement de la rigueur et de l'autonomie en télétravail</li>
           </ul>
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- LANGUES -->
+<section class="section section-alt" id="langues">
+  <div class="container">
+    <h2 class="section-title">Langues</h2>
+    <div class="languages-grid">
+      <div class="language-item reveal">
+        <div class="language-header">
+          <span class="language-name">Malgache</span>
+          <span class="language-level">Langue maternelle</span>
+        </div>
+        <div class="language-bar"><div class="language-fill" data-width="100"></div></div>
+      </div>
+      <div class="language-item reveal">
+        <div class="language-header">
+          <span class="language-name">Français</span>
+          <span class="language-level">Courant</span>
+        </div>
+        <div class="language-bar"><div class="language-fill" data-width="90"></div></div>
+      </div>
+      <div class="language-item reveal">
+        <div class="language-header">
+          <span class="language-name">Anglais</span>
+          <span class="language-level">Intermédiaire</span>
+        </div>
+        <div class="language-bar"><div class="language-fill" data-width="50"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CENTRES D'INTÉRÊT -->
+<section class="section" id="interets">
+  <div class="container">
+    <h2 class="section-title">Centres d'intérêt</h2>
+    <div class="interests-grid">
+      <div class="interest-card reveal">
+        <div class="interest-icon">🎨</div>
+        <h3>Créativité</h3>
+        <p>Design, montage photo, expression artistique au quotidien.</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">🎵</div>
+        <h3>Musique</h3>
+        <p>La musique comme source d'énergie et d'inspiration.</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">🎮</div>
+        <h3>Jeux</h3>
+        <p>Stratégie, réflexion et détente à travers les jeux.</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">💡</div>
+        <h3>Développement personnel</h3>
+        <p>Toujours apprendre, évoluer et se surpasser.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -269,6 +387,12 @@ title: "Accueil"
           <div class="contact-item">
             <span class="contact-icon">📘</span>
             <span>{{ site.author.facebook }}</span>
+          </div>
+          {% endif %}
+          {% if site.author.linkedin %}
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
           </div>
           {% endif %}
         </div>

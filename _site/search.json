@@ -1,0 +1,27 @@
+[
+  
+  {
+    "title"   : "Mes premiers pas en community management : ce que j'ai découvert",
+    "url"     : "/community%20management/premiers-pas-community-management/",
+    "date"    : "30 June 2026",
+    "excerpt" : "Je ne suis pas encore community manager professionnelle — mais je me forme activement. Voici ce que j'ai compris sur ce métier en quelques semaines d'apprentissage.",
+    "categories": "community management"
+  },
+  
+  {
+    "title"   : "Ce que j'ai appris sur la relation client chez Startimes",
+    "url"     : "/relation%20client/relation-client-startimes/",
+    "date"    : "25 June 2026",
+    "excerpt" : "Vendre un kit solaire, c'est facile. Garder le client satisfait après la vente, c'est là que tout se joue. Voici ce que mes mois chez Startimes m'ont appris.",
+    "categories": "relation client"
+  },
+  
+  {
+    "title"   : "Bienvenue sur mon blog",
+    "url"     : "/g%C3%A9n%C3%A9ral/bienvenue/",
+    "date"    : "18 June 2026",
+    "excerpt" : "Premier article de mon blog — je vous présente qui je suis et ce que vous trouverez ici.",
+    "categories": "général"
+  }
+  
+]

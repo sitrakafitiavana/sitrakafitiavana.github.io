@@ -1,21 +1,23 @@
 ---
 layout: default
 title: "Blog"
+description: "Articles et réflexions de Sitraka Nomena sur le commerce, les ressources humaines, la logistique et la vie professionnelle à Madagascar."
 permalink: /blog/
 ---
 <section class="page-hero">
   <div class="container">
     <h1>Blog</h1>
-    <p>Mes réflexions sur le développement, les technologies et plus encore.</p>
+    <p>Mes réflexions sur le commerce, les RH et la vie professionnelle à Madagascar.</p>
+    <a href="{{ '/search' | relative_url }}" class="btn btn-outline btn-sm" style="margin-top:1rem;">🔍 Rechercher un article</a>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
     {% if site.posts.size > 0 %}
-    <div class="posts-list">
+    <div class="posts-list" id="posts-list">
       {% for post in site.posts %}
-      <article class="post-list-item">
+      <article class="post-list-item reveal" data-index="{{ forloop.index0 }}">
         <div class="post-list-meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time>
           {% if post.categories %}
@@ -28,8 +30,46 @@ permalink: /blog/
       </article>
       {% endfor %}
     </div>
+
+    <!-- Pagination JS -->
+    <div class="pagination" id="pagination"></div>
+
     {% else %}
     <p class="empty-state">Aucun article pour l'instant. Revenez bientôt !</p>
     {% endif %}
   </div>
 </section>
+
+<script>
+(function(){
+  const ITEMS_PER_PAGE = 5;
+  const items = Array.from(document.querySelectorAll('.post-list-item'));
+  const paginationEl = document.getElementById('pagination');
+  if (!paginationEl || items.length <= ITEMS_PER_PAGE) return;
+
+  const totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
+  let current = 1;
+
+  function show(page) {
+    current = page;
+    items.forEach((el, i) => {
+      el.style.display = (i >= (page-1)*ITEMS_PER_PAGE && i < page*ITEMS_PER_PAGE) ? '' : 'none';
+    });
+    renderPagination();
+    window.scrollTo({ top: document.getElementById('posts-list').offsetTop - 80, behavior: 'smooth' });
+  }
+
+  function renderPagination() {
+    let html = '';
+    if (current > 1) html += `<button class="page-btn" onclick="showPage(${current-1})">&larr;</button>`;
+    for (let p = 1; p <= totalPages; p++) {
+      html += `<button class="page-btn${p===current?' active':''}" onclick="showPage(${p})">${p}</button>`;
+    }
+    if (current < totalPages) html += `<button class="page-btn" onclick="showPage(${current+1})">&rarr;</button>`;
+    paginationEl.innerHTML = html;
+  }
+
+  window.showPage = show;
+  show(1);
+})();
+</script>

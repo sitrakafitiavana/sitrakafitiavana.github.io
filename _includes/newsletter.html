@@ -1,0 +1,20 @@
+<section class="section section-alt" id="newsletter">
+  <div class="container newsletter-container">
+    <div class="newsletter-content">
+      <div class="newsletter-icon">💌</div>
+      <h2>Restez connecté·e</h2>
+      <p>Recevez mes nouveaux articles directement dans votre boîte mail. Pas de spam, désabonnement en un clic.</p>
+    </div>
+    <form class="newsletter-form" id="newsletter-form"
+          action="https://sibforms.com/serve/VOTRE_BREVO_FORM_ID"
+          method="POST" target="_blank">
+      <!-- Remplace l'action ci-dessus par l'URL de ton formulaire Brevo :
+           Dashboard Brevo → Contacts → Formulaires → Créer un formulaire → Obtenir le code -->
+      <div class="newsletter-input-group">
+        <input type="email" name="EMAIL" required placeholder="votre@email.com" class="newsletter-input" />
+        <button type="submit" class="btn">S'abonner</button>
+      </div>
+      <p class="newsletter-note">En vous abonnant, vous acceptez notre <a href="/privacy/">politique de confidentialité</a>.</p>
+    </form>
+  </div>
+</section>

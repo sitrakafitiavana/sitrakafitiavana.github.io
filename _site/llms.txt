@@ -1,0 +1,56 @@
+# Sitraka Nomena — Portfolio professionnel
+
+> Ny Anjara Fitiavana Sitraka Nomena est une professionnelle malgache de 28 ans spécialisée dans la vente, les ressources humaines et la logistique.
+
+## Identité
+
+- **Nom complet :** Ny Anjara Fitiavana Sitraka Nomena
+- **Email :** sitrakanomena1309@gmail.com
+- **Localisation :** 26 Ter Manjaka Ilafy, Madagascar
+- **Téléphone / WhatsApp :** +261 34 32 422 29
+- **Langues :** Malgache (maternelle), Français (courant), Anglais (intermédiaire)
+
+## Expériences professionnelles
+
+### Opérationnelle – Startimes (depuis mars 2025)
+Prospection, vente de panneaux solaires et kits solaires, activation clients, suivi portefeuille, fidélisation.
+
+### Stagiaire Ressources Humaines – Airtel Madagascar (août 2024 – février 2025)
+Planning cantine, gestion de stock, dossiers ASCOMA, certificats de scolarité, suivi carburants, organisation production.
+
+### Logistique – Road In Logistic & Transport (mars 2021 – juillet 2023)
+Transport, approvisionnement, gestion des stocks, coordination logistique.
+
+### Opérateur Online – SmartOne (août 2018 – août 2021)
+Traitement des opérations externalisées en ligne.
+
+## Compétences
+
+- Commercial & vente : prospection, argumentation, suivi clients, fidélisation
+- Ressources humaines : gestion administrative, planning, dossiers RH
+- Logistique : transport, stocks, approvisionnement
+- Informatique : Microsoft Office (Word, Excel, PowerPoint), Adobe Photoshop
+
+## Formation
+
+- Niveau 2e année – Institut Supérieur de Technologie et de Management, Ankadikely (2017–2018)
+- Niveau 1re année – Institut Supérieur de Technologie et de Management, Ankadikely (2016–2017)
+- Baccalauréat série A2 – Lycée Arcade, Sabotsy Namehana (2015–2016)
+
+## Pages du site
+
+- [Accueil](http://localhost:4000/)
+- [Blog](http://localhost:4000/blog/)
+- [Projets](http://localhost:4000/projects/)
+
+## Articles de blog
+
+- [Mes premiers pas en community management : ce que j'ai découvert](http://localhost:4000/community%20management/premiers-pas-community-management/) — 30 June 2026
+- [Ce que j'ai appris sur la relation client chez Startimes](http://localhost:4000/relation%20client/relation-client-startimes/) — 25 June 2026
+- [Bienvenue sur mon blog](http://localhost:4000/g%C3%A9n%C3%A9ral/bienvenue/) — 18 June 2026
+
+
+## À propos de ce site
+
+Site portfolio statique généré avec Jekyll, hébergé sur GitHub Pages.
+Créé par [Miaro Fandresena Consultant SEO](https://miarofandresena.com).

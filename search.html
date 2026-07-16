@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Recherche"
+description: "Recherchez dans les articles du blog de Sitraka Nomena."
+permalink: /search/
+---
+<section class="page-hero">
+  <div class="container">
+    <h1>Recherche</h1>
+    <p>Trouvez un article dans le blog.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:720px;">
+    <div class="search-box">
+      <input type="text" id="search-input" class="search-input" placeholder="Tapez votre recherche…" autofocus />
+      <span class="search-icon">🔍</span>
+    </div>
+    <div id="search-results" class="search-results"></div>
+    <div id="search-empty" class="search-empty" style="display:none;">
+      <p>Aucun résultat pour cette recherche.</p>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+<script src="{{ '/assets/js/search.js' | relative_url }}"></script>

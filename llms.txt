@@ -1,0 +1,58 @@
+---
+layout: none
+permalink: /llms.txt
+---
+# Sitraka Nomena — Portfolio professionnel
+
+> Ny Anjara Fitiavana Sitraka Nomena est une professionnelle malgache de 28 ans spécialisée dans la vente, les ressources humaines et la logistique.
+
+## Identité
+
+- **Nom complet :** Ny Anjara Fitiavana Sitraka Nomena
+- **Email :** sitrakanomena1309@gmail.com
+- **Localisation :** 26 Ter Manjaka Ilafy, Madagascar
+- **Téléphone / WhatsApp :** +261 34 32 422 29
+- **Langues :** Malgache (maternelle), Français (courant), Anglais (intermédiaire)
+
+## Expériences professionnelles
+
+### Opérationnelle – Startimes (depuis mars 2025)
+Prospection, vente de panneaux solaires et kits solaires, activation clients, suivi portefeuille, fidélisation.
+
+### Stagiaire Ressources Humaines – Airtel Madagascar (août 2024 – février 2025)
+Planning cantine, gestion de stock, dossiers ASCOMA, certificats de scolarité, suivi carburants, organisation production.
+
+### Logistique – Road In Logistic & Transport (mars 2021 – juillet 2023)
+Transport, approvisionnement, gestion des stocks, coordination logistique.
+
+### Opérateur Online – SmartOne (août 2018 – août 2021)
+Traitement des opérations externalisées en ligne.
+
+## Compétences
+
+- Commercial & vente : prospection, argumentation, suivi clients, fidélisation
+- Ressources humaines : gestion administrative, planning, dossiers RH
+- Logistique : transport, stocks, approvisionnement
+- Informatique : Microsoft Office (Word, Excel, PowerPoint), Adobe Photoshop
+
+## Formation
+
+- Niveau 2e année – Institut Supérieur de Technologie et de Management, Ankadikely (2017–2018)
+- Niveau 1re année – Institut Supérieur de Technologie et de Management, Ankadikely (2016–2017)
+- Baccalauréat série A2 – Lycée Arcade, Sabotsy Namehana (2015–2016)
+
+## Pages du site
+
+- [Accueil]({{ site.url }}/)
+- [Blog]({{ site.url }}/blog/)
+- [Projets]({{ site.url }}/projects/)
+
+## Articles de blog
+
+{% for post in site.posts %}- [{{ post.title }}]({{ site.url }}{{ post.url }}) — {{ post.date | date: "%d %B %Y" }}
+{% endfor %}
+
+## À propos de ce site
+
+Site portfolio statique généré avec Jekyll, hébergé sur GitHub Pages.
+Créé par [Miaro Fandresena Consultant SEO](https://miarofandresena.com).

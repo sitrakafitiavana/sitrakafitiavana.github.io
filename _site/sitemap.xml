@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://localhost:4000/g%C3%A9n%C3%A9ral/bienvenue/</loc>
-<lastmod>2026-06-18T00:00:00+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/projects/portfolio/</loc>
-<lastmod>2026-06-18T16:34:04+03:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/projects/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/assets/cv.pdf</loc>
-<lastmod>2026-06-18T11:35:44+03:00</lastmod>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Page d'accueil -->
+  <url>
+    <loc>http://localhost:4000/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>http://localhost:4000/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+
+  <!-- Projets -->
+  <url>
+    <loc>http://localhost:4000/projects/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+
+  <!-- Articles de blog -->
+  
+  <url>
+    <loc>http://localhost:4000/community%20management/premiers-pas-community-management/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/relation%20client/relation-client-startimes/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-06-25</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/g%C3%A9n%C3%A9ral/bienvenue/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+  
+
+  <!-- Projets -->
+  
+  <url>
+    <loc>http://localhost:4000/projects/animation-whatsapp-business/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/projects/community-management-mockup/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/projects/portfolio/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/projects/support-client-cas-pratique/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  
+
 </urlset>

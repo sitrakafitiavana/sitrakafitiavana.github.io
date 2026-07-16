@@ -1,3 +1,7 @@
+---
+layout: none
+permalink: /robots.txt
+---
 User-agent: *
 Allow: /
 
@@ -10,4 +14,4 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-Sitemap: http://localhost:4000/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
